@@ -28,8 +28,8 @@ alias aptupu='sudo apt upgrade'
 ### - edit bashrc
 alias ban='cd ~ && na .bashrc'
 alias bav='cd ~ && vi .bashrc'
-alias alc='cd ~ && cd rc_bashrc_scripts/ && na .ril_aliases.sh'
-alias alf='cd ~ && cd rc_bashrc_scripts/ && na .ril_funcs.sh'
+alias alc='cd ~ && cd rc_bashrc_scripts/ && na aliases.sh'
+alias alf='cd ~ && cd rc_bashrc_scripts/ && na funcs.sh'
 
 ### - edit config files
 alias ctmx='cd ~ && nano .tmux.conf'
@@ -38,12 +38,8 @@ alias ctmx='cd ~ && nano .tmux.conf'
 alias reba='source ~/.bashrc'
 alias hclr='history -c && history -w'
 
-### - Cleaning
+### - cleaning
 alias c='clear'
-
-### - ls commands
-alias lsa='ls -a'
-alias lsae='ls -a | nms'
 
 ### - info
 alias path='readlink -f'
@@ -52,6 +48,8 @@ alias path='readlink -f'
 alias nt='cd && cd Notes/'
 alias ntl='cd && cd Notes/ && cd linux/'
 alias home='cd /home'
+alias bcgit='cd && cd COMP167/BashConfig/'
+alias ntgit='cd && cd COMP167/Notes'
 
 #-----------------------------------------------------------------#
 
@@ -70,13 +68,18 @@ alias pbp='xsel --clipboard --output'
 alias fmr='ranger'
 alias nn='nnn'
 
-### - information
+### - sys information
 alias bt='bpytop'
 alias ht='htop'
 alias nf='neofetch'
 alias dk='ncdu'
+
+### - directory info
+alias lsa='exa -a'
+alias lsae='exa -a | nms'
 alias ls='exa'
 alias ll='exa -lh'
+alias lla='exa -lha'
 alias tree='exa --tree'
 
 ### - webstuff
