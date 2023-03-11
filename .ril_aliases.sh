@@ -46,10 +46,14 @@ alias path='readlink -f'
 
 ### - navigation
 alias nt='cd && cd Notes/'
-alias ntl='cd && cd Notes/ && cd linux/'
+alias ntl='cd && cd Notes/ && cd Linux/'
 alias home='cd /home'
 alias bcgit='cd && cd COMP167/BashConfig/'
 alias ntgit='cd && cd COMP167/Notes'
+
+### - Notes
+alias ntse='ntl && wg CustomAndUsefulShortcuts.wg'
+alias ntae='ntl && wg UsefulAndCoolTerminalApplications'
 
 #-----------------------------------------------------------------#
 
