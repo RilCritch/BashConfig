@@ -23,7 +23,13 @@ pushbc()
 {
 	bcgit
 	git add . && git commit -m "update" && git push --all
-	cd -
+}
+
+## - push note files to github
+pushnt()
+{
+	ntgit
+	git add . && git commit -m "update" && git push --all
 }
 
 ###################################################################
