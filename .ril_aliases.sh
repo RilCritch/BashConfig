@@ -28,11 +28,11 @@ alias aptupu='sudo apt upgrade'
 ### - edit bashrc
 alias ban='cd ~ && na .bashrc'
 alias bav='cd ~ && vi .bashrc'
-alias alc='cd ~ && cd rc_bashrc_scripts/ && na aliases.sh'
-alias fnc='cd ~ && cd rc_bashrc_scripts/ && na funcs.sh'
+alias alc='cd /home/rc/Documents/bashscripts/ && na aliases.sh'
+alias fnc='cd /home/rc/Documents/bashscripts/ && na funcs.sh'
 
 ### - edit config files
-alias ctmx='cd ~ && nano .tmux.conf'
+alias ctmx='cd ~ && na .tmux.conf'
 
 ### - refresh bash
 alias reba='source ~/.bashrc'
@@ -45,16 +45,17 @@ alias c='clear'
 alias path='readlink -f'
 
 ### - navigation
-alias nt='cd && cd Notes/'
-alias ntl='cd && cd Notes/ && cd Linux/'
+alias nt='doc && cd note/'
+alias ntl='nt && cd linux/'
 alias home='cd /home'
+alias doc='cd /home/rc/Documents/'
 alias bcgit='cd && cd COMP167/BashConfig/'
 alias ntgit='cd && cd COMP167/Notes/'
 alias mcgit='cd && cd COMP167/MiscConfigFiles/'
 
 ### - Notes
-alias ntse='ntl && wg CustomAndUsefulShortcuts.wg'
-alias ntae='ntl && wg UsefulAndCoolTerminalApplications.wg'
+alias ntse='ntl && wg shortcuts.wg'
+alias ntae='ntl && wg favapps.wg'
 
 #-----------------------------------------------------------------#
 
@@ -62,6 +63,7 @@ alias ntae='ntl && wg UsefulAndCoolTerminalApplications.wg'
 
 ### - text editors
 alias na='nano --linenumbers'
+alias nano='nano --linenumbers'
 alias vi='vim'
 alias wg='wordgrinder'
 
@@ -72,6 +74,7 @@ alias pbp='xsel --clipboard --output'
 ### - file managers
 alias fmr='ranger'
 alias nn='nnn'
+alias f='mc'
 
 ### - sys information
 alias bt='bpytop'
