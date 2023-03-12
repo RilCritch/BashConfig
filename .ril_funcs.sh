@@ -8,7 +8,7 @@
 CONF_LOADED=true
 ###################################################################
 
-## - printline() - pl
+## - printline() - pl --------------------------------------------#
 #### - retrive and print line from document
 #### - EX:
 ######## - 'printline 2000,2250 <file>' - file to copy from
@@ -16,6 +16,14 @@ CONF_LOADED=true
 pl()
 {
 	sed -n -e "$1p" "$2"
+}
+
+## - push bash config files to github ----------------------------#
+pushbc()
+{
+	bcgit
+	git add . && git commit -m "update" && git push --all
+	cd -
 }
 
 ###################################################################
