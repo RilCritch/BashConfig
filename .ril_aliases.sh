@@ -49,7 +49,8 @@ alias nt='cd && cd Notes/'
 alias ntl='cd && cd Notes/ && cd Linux/'
 alias home='cd /home'
 alias bcgit='cd && cd COMP167/BashConfig/'
-alias ntgit='cd && cd COMP167/Notes'
+alias ntgit='cd && cd COMP167/Notes/'
+alias mcgit='cd && cd COMP167/MiscConfigFiles/'
 
 ### - Notes
 alias ntse='ntl && wg CustomAndUsefulShortcuts.wg'
