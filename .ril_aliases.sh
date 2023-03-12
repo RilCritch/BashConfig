@@ -33,6 +33,7 @@ alias fnc='cd /home/rc/Documents/bashscripts/ && na funcs.sh'
 
 ### - edit config files
 alias ctmx='cd ~ && na .tmux.conf'
+alias cna='cd /etc && sudo na nanorc'
 
 ### - refresh bash
 alias reba='source ~/.bashrc'
