@@ -36,7 +36,7 @@ alias ctmx='cd ~ && na .tmux.conf'
 alias cna='cd /etc && sudo na nanorc'
 
 ### - refresh bash
-alias reba='source ~/.bashrc'
+alias reba='source ~/.bashrc && c'
 alias hclr='history -c && history -w'
 
 ### - cleaning
@@ -54,9 +54,14 @@ alias bcgit='cd && cd COMP167/BashConfig/'
 alias ntgit='cd && cd COMP167/Notes/'
 alias mcgit='cd && cd COMP167/MiscConfigFiles/'
 
-### - Notes
+### - notes
 alias ntse='ntl && wg shortcuts.wg'
 alias ntae='ntl && wg favapps.wg'
+
+### - nav clear and info
+alias rcv='c && cd && ll'
+alias dcv='c && doc && ls && tree'
+alias gtv='c && cd && cd COMP167/ && ll'
 
 #-----------------------------------------------------------------#
 
