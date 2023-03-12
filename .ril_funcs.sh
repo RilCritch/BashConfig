@@ -25,11 +25,20 @@ pushbc()
 	git add . && git commit -m "update" && git push --all
 }
 
-## - push note files to github
+## - push note files to github -----------------------------------#
 pushnt()
 {
 	ntgit
 	git add . && git commit -m "update" && git push --all
+}
+
+## - check status of github repos --------------------------------#
+gitStatusAll()
+{
+	echo "| - Bash Configs - |"
+	bcgit && git status
+	echo "| - Notes - |"
+	ntgit && git status
 }
 
 ###################################################################

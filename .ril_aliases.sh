@@ -29,7 +29,7 @@ alias aptupu='sudo apt upgrade'
 alias ban='cd ~ && na .bashrc'
 alias bav='cd ~ && vi .bashrc'
 alias alc='cd ~ && cd rc_bashrc_scripts/ && na aliases.sh'
-alias alf='cd ~ && cd rc_bashrc_scripts/ && na funcs.sh'
+alias fnc='cd ~ && cd rc_bashrc_scripts/ && na funcs.sh'
 
 ### - edit config files
 alias ctmx='cd ~ && nano .tmux.conf'
@@ -53,7 +53,7 @@ alias ntgit='cd && cd COMP167/Notes'
 
 ### - Notes
 alias ntse='ntl && wg CustomAndUsefulShortcuts.wg'
-alias ntae='ntl && wg UsefulAndCoolTerminalApplications'
+alias ntae='ntl && wg UsefulAndCoolTerminalApplications.wg'
 
 #-----------------------------------------------------------------#
 
