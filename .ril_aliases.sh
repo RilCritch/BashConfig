@@ -31,58 +31,37 @@ alias bav='cd ~ && vi .bashrc'
 alias alc='cd /home/rc/Documents/bashscripts/ && na aliases.sh'
 alias fnc='cd /home/rc/Documents/bashscripts/ && na funcs.sh'
 
+### - edit config files
+alias ctmx='cd ~ && na .tmux.conf'
+alias cna='cd /etc && sudo na nanorc'
+
 ### - refresh bash
-alias reba='cd && source ~/.bashrc && c'
+alias reba='source ~/.bashrc && c'
 alias hclr='history -c && history -w'
 
-### - clearing
+### - cleaning
 alias c='clear'
-alias ca='clear &&'
-
-### - file creation
-alias sc='ln -s'
-alias nf='touch'
 
 ### - info
 alias path='readlink -f'
 
-#-----------------------------------------------------------------#
+### - navigation
+alias nt='doc && cd note/'
+alias ntl='nt && cd linux/'
+alias home='cd /home'
+alias doc='cd /home/rc/Documents/'
+alias bcgit='cd && cd COMP167/BashConfig/'
+alias ntgit='cd && cd COMP167/Notes/'
+alias mcgit='cd && cd COMP167/MiscConfigFiles/'
 
-## navigation ----------------------------------------------------#
+### - notes
+alias ntse='ntl && wg shortcuts.wg'
+alias ntae='ntl && wg favapps.wg'
 
-### - rilcritch user
-alias r='cd /home/rc/'
-alias rcv='c && rc && figlet RilCritch && ll'
-
-### - root user
-alias s='cd /root/'
-alias scv='c && s && figlet ROOT && lla'
-
-### - documents
-alias d='cd /home/rc/Documents/'
-alias dcv='c && doc && figlet DOCUMENTS && ls && tree'
-
-alias db='d && cd bashcripts/'
-alias dbcv='c && db && lla'
-
-alias dc='d && cd configfiles'
-alias dccv='c && dc && lla'
-
-alias dn='d && cd note'
-alias dncv='c && dn && tree'
-
-### - gitgub
-alias g='cd /home/rc/COMP167/'
-alias gcv='c && g && figlet GITHUB && ls && tree'
-
-alias gb='g && cd /BashConfig'
-alias gbcv='c && gb && lla'
-
-alias gn='g && cd /Notes/'
-alias gncv='c && gn && tree'
-
-alias gm='g && cd /MiscConfigFiles/'
-alias gmcv='c && gm && lla'
+### - nav clear and info
+alias rcv='c && cd && ll'
+alias dcv='c && doc && ls && tree'
+alias gtv='c && cd && cd COMP167/ && ll'
 
 #-----------------------------------------------------------------#
 
@@ -90,6 +69,7 @@ alias gmcv='c && gm && lla'
 
 ### - text editors
 alias na='nano --linenumbers'
+alias nano='nano --linenumbers'
 alias vi='vim'
 alias wg='wordgrinder'
 
@@ -98,10 +78,13 @@ alias pbc='xsel --clipboard --input'
 alias pbp='xsel --clipboard --output'
 
 ### - file managers
+alias fmr='ranger'
+alias nn='nnn'
 alias f='mc'
 
 ### - sys information
 alias bt='bpytop'
+alias ht='htop'
 alias nf='neofetch'
 alias dk='ncdu'
 
@@ -112,6 +95,16 @@ alias ls='exa'
 alias ll='exa -lh'
 alias lla='exa -lha'
 alias tree='exa --tree'
+
+### - webstuff
+alias web='links2'
+
+### - tasks
+alias atb='tb -t'
+alias dtb='tb -d'
+alias ntb='tb -n'
+alias stb='tb -b'
+alias ctb='tb -c'
 
 ### - text readers
 alias bat='batcat'
