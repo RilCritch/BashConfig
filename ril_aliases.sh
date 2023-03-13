@@ -71,7 +71,7 @@ alias dccv='c && dc && lla'
 alias dn='d && cd note'
 alias dncv='c && dn && tree'
 
-### - gitgub
+### - github
 alias g='cd /home/rc/COMP167/'
 alias gcv='c && g && figlet GITHUB && ls && tree'
 
