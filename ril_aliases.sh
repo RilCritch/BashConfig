@@ -65,11 +65,14 @@ alias dcv='c && d && figlet DOCUMENTS && ls && tree'
 alias db='d && cd bashscripts/'
 alias dbcv='c && db && lla'
 
-alias dc='d && cd configfiles'
+alias dc='d && cd configfiles/'
 alias dccv='c && dc && lla'
 
-alias dn='d && cd note'
+alias dn='d && cd note/'
 alias dncv='c && dn && tree'
+
+alias ds='d && cd scripts/'
+alias dscv='c && ds && lla'
 
 ### - github
 alias g='cd /home/rc/COMP167/'
