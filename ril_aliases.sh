@@ -52,15 +52,15 @@ alias path='readlink -f'
 
 ### - rilcritch user
 alias r='cd /home/rc/'
-alias rcv='c && r && figlet RilCritch && ll'
+alias rcv='c && r && figlet -k RilCritch && ll'
 
 ### - root user
 alias s='cd /root/'
-alias scv='c && s && figlet ROOT && lla'
+alias scv='c && s && figlet -k ROOT && lla'
 
 ### - documents
 alias d='cd /home/rc/Documents/'
-alias dcv='c && d && figlet DOCUMENTS && ls && tree'
+alias dcv='c && d && figlet -k DOCUMENTS && ls && tree'
 
 alias db='d && cd bashscripts/'
 alias dbcv='c && db && lla'
@@ -69,20 +69,20 @@ alias dc='d && cd configfiles/'
 alias dccv='c && dc && lla'
 
 alias dn='d && cd note/'
-alias dncv='c && dn && tree'
+alias dncv='c && dn && ls && tree'
 
 alias ds='d && cd scripts/'
 alias dscv='c && ds && lla'
 
 ### - github
 alias g='cd /home/rc/COMP167/'
-alias gcv='c && g && figlet GITHUB && ls && tree'
+alias gcv='c && g && figlet -k GITHUB && ls && tree'
 
 alias gb='g && cd BashConfig'
 alias gbcv='c && gb && lla'
 
 alias gn='g && cd Notes/'
-alias gncv='c && gn && tree'
+alias gncv='c && gn && ls && tree'
 
 alias gm='g && cd MiscConfigFiles/'
 alias gmcv='c && gm && lla'
