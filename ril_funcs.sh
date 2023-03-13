@@ -75,10 +75,13 @@ gitStatusAll()
 {
 	echo "| - Bash Configs - |"
 	gb && git status
+	echo -e "|------------------|\n"
 	echo "| - Notes - |"
 	gn && git status
+	echo -e "|------------------|\n"
 	echo "| - Misc Configs - |"
 	gm && git status
+	echo -e "|------------------|\n"
 }
 
 
