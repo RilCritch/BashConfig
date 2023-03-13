@@ -48,19 +48,19 @@ vc()
 ## - push bash config files to github ----------------------------#
 pushbc()
 {
-	bcgit && putil
+	gb && putil
 }
 
 ## - push note files to github -----------------------------------#
 pushnt()
 {
-	ntgit && putil
+	gn && putil
 }
 
 ## - push mis config to github
 pushmc()
 {
-	mcgit && putil
+	gm && putil
 }
 
 ## - utility for push fncs ---------------------------------------#
@@ -74,14 +74,12 @@ putil()
 gitStatusAll()
 {
 	echo "| - Bash Configs - |"
-	bcgit && git status
+	gb && git status
 	echo "| - Notes - |"
-	ntgit && git status
+	gn && git status
+	echo "| - Misc Configs - |"
+	gm && git status
 }
 
 
 # -------------------------------------------------------------------------------------------------------- #
-
-###################################################################
-echo "Functions Loaded"
-###################################################################

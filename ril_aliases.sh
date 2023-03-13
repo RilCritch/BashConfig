@@ -52,7 +52,7 @@ alias path='readlink -f'
 
 ### - rilcritch user
 alias r='cd /home/rc/'
-alias rcv='c && rc && figlet RilCritch && ll'
+alias rcv='c && r && figlet RilCritch && ll'
 
 ### - root user
 alias s='cd /root/'
@@ -60,9 +60,9 @@ alias scv='c && s && figlet ROOT && lla'
 
 ### - documents
 alias d='cd /home/rc/Documents/'
-alias dcv='c && doc && figlet DOCUMENTS && ls && tree'
+alias dcv='c && d && figlet DOCUMENTS && ls && tree'
 
-alias db='d && cd bashcripts/'
+alias db='d && cd bashscripts/'
 alias dbcv='c && db && lla'
 
 alias dc='d && cd configfiles'
@@ -75,13 +75,13 @@ alias dncv='c && dn && tree'
 alias g='cd /home/rc/COMP167/'
 alias gcv='c && g && figlet GITHUB && ls && tree'
 
-alias gb='g && cd /BashConfig'
+alias gb='g && cd BashConfig'
 alias gbcv='c && gb && lla'
 
-alias gn='g && cd /Notes/'
+alias gn='g && cd Notes/'
 alias gncv='c && gn && tree'
 
-alias gm='g && cd /MiscConfigFiles/'
+alias gm='g && cd MiscConfigFiles/'
 alias gmcv='c && gm && lla'
 
 #-----------------------------------------------------------------#
@@ -118,6 +118,3 @@ alias bat='batcat'
 
 #-----------------------------------------------------------------#
 ##############################################################################################################
-
-###################################################################
-echo "Aliases Loaded"
