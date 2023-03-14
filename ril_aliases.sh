@@ -32,7 +32,8 @@ alias alc='cd /home/rc/Documents/bashscripts/ && na aliases.sh'
 alias fnc='cd /home/rc/Documents/bashscripts/ && na funcs.sh'
 
 ### - refresh bash
-alias reba='cd && source ~/.bashrc && c'
+alias reba='source ~/.bashrc'
+alias rebac='source ~/.bashrc && c'
 alias hclr='history -c && history -w'
 
 ### - clearing
@@ -52,15 +53,15 @@ alias path='readlink -f'
 
 ### - rilcritch user
 alias r='cd /home/rc/'
-alias rcv='c && r && figlet -k RilCritch && ll'
+alias rcv='c && r && yellow "$(figlet -k "RilCritch")" && ll'
 
 ### - root user
 alias s='cd /root/'
-alias scv='c && s && figlet -k ROOT && lla'
+alias scv='c && s && red "$(figlet -k "ROOT")" && lla'
 
 ### - documents
 alias d='cd /home/rc/Documents/'
-alias dcv='c && d && figlet -k DOCUMENTS && ls && tree'
+alias dcv='c && d && blue "$(figlet -k "Documents")" && ls'
 
 alias db='d && cd bashscripts/'
 alias dbcv='c && db && lla'
@@ -76,7 +77,7 @@ alias dscv='c && ds && lla'
 
 ### - github
 alias g='cd /home/rc/COMP167/'
-alias gcv='c && g && figlet -k GITHUB && ls && tree'
+alias gcv='c && g && blue "$(figlet -k "GitHub")" && ls'
 
 alias gb='g && cd BashConfig'
 alias gbcv='c && gb && lla'
@@ -86,6 +87,12 @@ alias gncv='c && gn && ls && tree'
 
 alias gm='g && cd MiscConfigFiles/'
 alias gmcv='c && gm && lla'
+
+#-----------------------------------------------------------------#
+
+# custom scripts -------------------------------------------------#
+
+alias ufetch='/home/rc/Documents/scripts/termbling/ufetch.sh'
 
 #-----------------------------------------------------------------#
 
