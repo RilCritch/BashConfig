@@ -3,6 +3,23 @@
 ### Updated: 03/11/2023 #####################################################################################
 #############################################################################################################
 
+# How to include in .bashrc
+## - Change location paths to where you put the files on your system and name them
+
+## - variables - ##
+#SD="/home/rc/Documents/bashscripts/"
+#AL="aliases.sh"
+#FN="funcs.sh"
+#
+### - aliases - ##
+#ALP="$SD$AL"
+#if [ -f "$ALP" ];
+#then
+#        . "$ALP"
+#else
+#        echo "ERROR: failed to load $AL"
+#fi
+
 ###################################################################
 #!/bin/bash
 CONF_LOADED=true
