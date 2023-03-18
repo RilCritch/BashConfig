@@ -25,8 +25,6 @@
 CONF_LOADED=true
 ###################################################################
 
-##############################################################################################################
-
 ## apt aliases ---------------------------------------------------#
 
 ### - install
@@ -43,10 +41,10 @@ alias aptupu='sudo apt upgrade'
 ## common task aliases -------------------------------------------#
 
 ### - edit bashrc
-alias ban='cd ~ && na .bashrc'
-alias bav='cd ~ && vi .bashrc'
-alias alc='cd /home/rc/Documents/bashscripts/ && na aliases.sh'
-alias fnc='cd /home/rc/Documents/bashscripts/ && na funcs.sh'
+alias ban='na /home/rc/.bashrc'
+alias bav='vim /home/rc/.bashrc'
+alias alc='na /home/rc/COMP167/BashConfig/ril_aliases.sh'
+alias fnc='na /home/rc/COMP167/BashConfig/ril_funcs.sh'
 
 ### - refresh bash
 alias reba='source ~/.bashrc'
@@ -54,7 +52,7 @@ alias rebac='source ~/.bashrc && c'
 alias hclr='history -c && history -w'
 
 ### - clearing
-alias c='clear'
+alias c='clear && colorscript -e 21'
 alias ca='clear &&'
 
 ### - file creation
@@ -64,46 +62,51 @@ alias nf='touch'
 ### - info
 alias path='readlink -f'
 
+### - confrim before overwriting
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+
 #-----------------------------------------------------------------#
 
 ## navigation ----------------------------------------------------#
 
 ### - rilcritch user
 alias r='cd /home/rc/'
-alias rcv='c && r && yellow "$(figlet -k "RilCritch")" && ll'
+alias rcv='clear && r && yellow "$(figlet -k "RilCritch")" && ll'
 
 ### - root user
 alias s='cd /root/'
-alias scv='c && s && red "$(figlet -k "ROOT")" && lla'
+alias scv='clear && s && red "$(figlet -k "ROOT")" && lla'
 
 ### - documents
 alias d='cd /home/rc/Documents/'
-alias dcv='c && d && blue "$(figlet -k "Documents")" && ls'
+alias dcv='clear && d && cyan "$(figlet -k "Documents")" && ls'
 
 alias db='d && cd bashscripts/'
-alias dbcv='c && db && lla'
+alias dbcv='clear && db && cyan "$(figlet -k "BashConfig")" && lla'
 
 alias dc='d && cd configfiles/'
-alias dccv='c && dc && lla'
+alias dccv='clear && dc && cyan "$(figlet -k "ConfigFiles")" && lla'
 
 alias dn='d && cd note/'
-alias dncv='c && dn && ls && tree'
+alias dncv='clear && dn && cyan "$(figlet -k "Notes")" && ls && tree'
 
 alias ds='d && cd scripts/'
-alias dscv='c && ds && lla'
+alias dscv='clear && ds && cyan "$(figlet -k "Scripts")" && ls && tree'
 
 ### - github
 alias g='cd /home/rc/COMP167/'
-alias gcv='c && g && blue "$(figlet -k "GitHub")" && ls'
+alias gcv='clear && g && blue "$(figlet -k "GitHub")" && ls'
 
 alias gb='g && cd BashConfig'
-alias gbcv='c && gb && lla'
+alias gbcv='clear && gb && blue "$(figlet -k "BashConfig")" && lla'
 
 alias gn='g && cd Notes/'
-alias gncv='c && gn && ls && tree'
+alias gncv='clear && gn && blue "$(figlet -k "Notes")" && ls && tree'
 
 alias gm='g && cd MiscConfigFiles/'
-alias gmcv='c && gm && lla'
+alias gmcv='clear && gm && blue "$(figlet -k "ConfigFiles")" && lla'
 
 #-----------------------------------------------------------------#
 
@@ -133,15 +136,13 @@ alias nf='neofetch'
 alias dk='ncdu'
 
 ### - directory info
-alias lsa='exa -a'
-alias lsae='exa -a | nms'
-alias ls='exa'
-alias ll='exa -lh'
-alias lla='exa -lha'
-alias tree='exa --tree'
+alias lsa='exa -a --color=always --group-directories-first'
+alias ls='exa --color=always --group-directories-first'
+alias ll='exa -lh --color=always --group-directories-first'
+alias lla='exa -lha --color=always --group-directories-first'
+alias tree='exa --tree --color=always --group-directories-first'
 
 ### - text readers
 alias bat='batcat'
 
 #-----------------------------------------------------------------#
-##############################################################################################################
