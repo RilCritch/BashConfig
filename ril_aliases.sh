@@ -112,7 +112,7 @@ alias gmcv='clear && gm && blue "$(figlet -k "ConfigFiles")" && lla'
 # custom scripts -------------------------------------------------#
 
 alias ufetch='/home/rc/Documents/scripts/termbling/ufetch.sh'
-alias pipes='/home/rc/Documents/scripts/termbling/pipes.sh/pipes.sh'
+alias pipes='/home/rc/Documents/scripts/termbling/pipez.sh'
 
 #-----------------------------------------------------------------#
 
