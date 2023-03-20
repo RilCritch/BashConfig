@@ -88,9 +88,6 @@ alias scv='clear && s && red "$(figlet -k "ROOT")" && lla'
 alias d='cd /home/rc/Documents/'
 alias dcv='clear && d && cyan "$(figlet -k "Documents")" && ls'
 
-alias db='d && cd bashscripts/'
-alias dbcv='clear && db && cyan "$(figlet -k "BashConfig")" && lla'
-
 alias dc='d && cd configfiles/'
 alias dccv='clear && dc && cyan "$(figlet -k "ConfigFiles")" && lla'
 
