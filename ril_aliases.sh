@@ -71,6 +71,11 @@ alias rm='rm -i'
 
 ## navigation ----------------------------------------------------#
 
+### - general
+alias ...='.. && ..'
+alias bb='cd -'
+shopt -s autocd
+
 ### - rilcritch user
 alias r='cd /home/rc/'
 alias rcv='clear && r && yellow "$(figlet -k "RilCritch")" && ll'
@@ -93,7 +98,7 @@ alias dn='d && cd note/'
 alias dncv='clear && dn && cyan "$(figlet -k "Notes")" && ls && tree'
 
 alias ds='d && cd scripts/'
-alias dscv='clear && ds && cyan "$(figlet -k "Scripts")" && ls && tree'
+alias dscv='clear && ds && cyan "$(figlet -k "Scripts")" && ls'
 
 ### - github
 alias g='cd /home/rc/COMP167/'
@@ -113,6 +118,7 @@ alias gmcv='clear && gm && blue "$(figlet -k "ConfigFiles")" && lla'
 # custom scripts -------------------------------------------------#
 
 alias ufetch='/home/rc/Documents/scripts/termbling/ufetch.sh'
+alias pipes='/home/rc/Documents/scripts/termbling/pipes.sh/pipes.sh'
 
 #-----------------------------------------------------------------#
 
@@ -136,7 +142,7 @@ alias nf='neofetch'
 alias dk='ncdu'
 
 ### - directory info
-alias lsa='exa -a --color=always --group-directories-first'
+alias la='exa -a --color=always --group-directories-first'
 alias ls='exa --color=always --group-directories-first'
 alias ll='exa -lh --color=always --group-directories-first'
 alias lla='exa -lha --color=always --group-directories-first'
