@@ -91,9 +91,6 @@ alias dcv='clear && d && cyan "$(figlet -k "Documents")" && ls'
 alias dc='d && cd configfiles/'
 alias dccv='clear && dc && cyan "$(figlet -k "ConfigFiles")" && lla'
 
-alias dn='d && cd note/'
-alias dncv='clear && dn && cyan "$(figlet -k "Notes")" && ls && tree'
-
 alias ds='d && cd scripts/'
 alias dscv='clear && ds && cyan "$(figlet -k "Scripts")" && ls'
 
