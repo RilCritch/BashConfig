@@ -43,8 +43,8 @@ alias aptupu='sudo apt upgrade'
 ### - edit bashrc
 alias ban='na /home/rc/.bashrc'
 alias bav='vim /home/rc/.bashrc'
-alias alc='na /home/rc/COMP167/BashConfig/ril_aliases.sh'
-alias fnc='na /home/rc/COMP167/BashConfig/ril_funcs.sh'
+alias alc='vim /home/rc/COMP167/BashConfig/ril_aliases.sh'
+alias fnc='vim /home/rc/COMP167/BashConfig/ril_funcs.sh'
 
 ### - refresh bash
 alias reba='source ~/.bashrc'
@@ -52,7 +52,7 @@ alias rebac='source ~/.bashrc && c'
 alias hclr='history -c && history -w'
 
 ### - clearing
-alias c='clear && colorscript -e 21'
+alias c='clear && colorscript -e 21' # boxes color script
 alias ca='clear &&'
 
 ### - file creation
