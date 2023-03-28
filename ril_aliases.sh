@@ -41,10 +41,9 @@ alias aptupu='sudo apt upgrade'
 ## common task aliases -------------------------------------------#
 
 ### - edit bashrc
-alias ban='na /home/rc/.bashrc'
-alias bav='vim /home/rc/.bashrc'
-alias alc='vim /home/rc/COMP167/BashConfig/ril_aliases.sh'
-alias fnc='vim /home/rc/COMP167/BashConfig/ril_funcs.sh'
+alias brc='nvim /home/rc/.bashrc'
+alias alc='nvim /home/rc/COMP167/BashConfig/ril_aliases.sh'
+alias fnc='nvim /home/rc/COMP167/BashConfig/ril_funcs.sh'
 
 ### - refresh bash
 alias reba='source ~/.bashrc'
@@ -120,8 +119,8 @@ alias pipes='/home/rc/Documents/scripts/termbling/pipez.sh'
 
 ### - text editors
 alias na='nano --linenumbers'
-alias vi='vim'
-alias wg='wordgrinder'
+alias vi='nvim'
+alias vim='nvim'
 
 ### - copy and paste
 alias pbc='xsel --clipboard --input'
