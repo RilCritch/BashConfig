@@ -45,6 +45,11 @@ alias brc='nvim /home/rc/.bashrc'
 alias alc='nvim /home/rc/COMP167/BashConfig/ril_aliases.sh'
 alias fnc='nvim /home/rc/COMP167/BashConfig/ril_funcs.sh'
 
+### - update git repos
+alias lbrc='cd /home/rc/COMP167/BashConfig && lazygit'
+alias lmsc='cd /home/rc/COMP167/MiscConfigFiles && lazygit'
+alias lntc='cd /home/rc/COMP167/Notes && lazygit'
+
 ### - refresh bash
 alias reba='source ~/.bashrc'
 alias rebac='source ~/.bashrc && c'
