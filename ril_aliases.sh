@@ -90,17 +90,14 @@ alias scv='clear && s && red "$(figlet -k "ROOT")" && lla'
 
 ### - documents
 alias d='cd /home/rc/Documents/'
-alias dcv='clear && d && cyan "$(figlet -k "Documents")" && ls'
-
-alias dc='d && cd configfiles/'
-alias dccv='clear && dc && cyan "$(figlet -k "ConfigFiles")" && lla'
+alias dcv='clear && d && cyan "$(figlet -k "Documents")" && ls && tree'
 
 alias ds='d && cd scripts/'
 alias dscv='clear && ds && cyan "$(figlet -k "Scripts")" && ls'
 
 ### - github
 alias g='cd /home/rc/COMP167/'
-alias gcv='clear && g && blue "$(figlet -k "GitHub")" && ls'
+alias gcv='clear && g && blue "$(figlet -k "GitHub")" && ls && tree'
 
 alias gb='g && cd BashConfig'
 alias gbcv='clear && gb && blue "$(figlet -k "BashConfig")" && lla'
