@@ -90,14 +90,17 @@ alias scv='clear && s && red "$(figlet -k "ROOT")" && lla'
 
 ### - documents
 alias d='cd /home/rc/Documents/'
-alias dcv='clear && d && cyan "$(figlet -k "Documents")" && ls'
+alias dcv='clear && d && cyan "$(figlet -k "Documents")" && ls && tree -L 2'
 
 alias ds='d && cd scripts/'
 alias dscv='clear && ds && cyan "$(figlet -k "Scripts")" && ls'
 
+alias dp='cd /home/rc/Documents/pythonProjects'
+alias dpcv='clear && dp && blue "$(figlet -k "Python Projects")" && ls && tree -L 2'
+
 ### - github
 alias g='cd /home/rc/COMP167/'
-alias gcv='clear && g && blue "$(figlet -k "GitHub")" && ls && tree'
+alias gcv='clear && g && blue "$(figlet -k "GitHub")" && ls && tree -L 2'
 
 alias gb='g && cd BashConfig'
 alias gbcv='clear && gb && blue "$(figlet -k "BashConfig")" && lla'
@@ -129,7 +132,7 @@ alias pbc='xsel --clipboard --input'
 alias pbp='xsel --clipboard --output'
 
 ### - file managers
-alias f='mc'
+alias fm='vifm'
 
 ### - sys information
 alias bt='bpytop'
@@ -145,5 +148,9 @@ alias tree='exa --tree --color=always --group-directories-first'
 
 ### - text readers
 alias bat='batcat'
+
+### - lazygit
+alias lgb='lazygit -p /home/rc/COMP167/BashConfig/'
+alias lgm='lazygit -p /home/rc/COMP167/MiscConfigFiles/'
 
 #-----------------------------------------------------------------#
