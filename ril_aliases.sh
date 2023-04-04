@@ -90,7 +90,7 @@ alias scv='clear && s && red "$(figlet -k "ROOT")" && lla'
 
 ### - documents
 alias d='cd /home/rc/Documents/'
-alias dcv='clear && d && cyan "$(figlet -k "Documents")" && ls && tree'
+alias dcv='clear && d && cyan "$(figlet -k "Documents")" && ls'
 
 alias ds='d && cd scripts/'
 alias dscv='clear && ds && cyan "$(figlet -k "Scripts")" && ls'
