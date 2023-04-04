@@ -153,3 +153,9 @@ alias lgb='lazygit -p /home/rc/COMP167/BashConfig/'
 alias lgm='lazygit -p /home/rc/COMP167/MiscConfigFiles/'
 
 #-----------------------------------------------------------------#
+
+## Programming Aliases -------------------------------------------#
+
+alias py3='python3'
+
+#-----------------------------------------------------------------#
