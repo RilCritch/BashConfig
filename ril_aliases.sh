@@ -96,7 +96,7 @@ alias ds='d && cd scripts/'
 alias dscv='clear && ds && cyan "$(figlet -k "Scripts")" && ls'
 
 alias dp='cd /home/rc/Documents/pythonProjects'
-alias dpcv='clear && dp && blue "$(figlet -k "Python Projects")" && ls && tree -L 2'
+alias dpcv='clear && dp && blue "$(figlet -k "PythonProjects")" && ls && tree -L 2'
 
 ### - github
 alias g='cd /home/rc/COMP167/'
